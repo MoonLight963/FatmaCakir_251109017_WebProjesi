@@ -1,5 +1,7 @@
-muzikler/
-resimler/
+# Remove exclusion for these folders
+!muzikler/
+!resimler/
+
 node_modules/
 *.log
 *.env
