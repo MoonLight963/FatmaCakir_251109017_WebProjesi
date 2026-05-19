@@ -11,4 +11,4 @@ Bu projede efsane Model grubuna olan sevgimi web programlamayla birleştirmek is
 * **Dinamik Menü:** Ziyaretçi giriş yaptığında menüdeki Giriş Yap yazısı kayboluyor, yerine Admin Paneli ve Çıkış Yap geliyor. 
 * **Admin Paneli (CRUD):** Giriş yapınca erişilebilen bu panelden veritabanına yeni konser ekleyebiliyor (POST), mevcut konserleri çekip listeleyebiliyor (GET) ve konser silebiliyoruz (DELETE).
 
-  Umarım projeyi ve arka plandaki Model müziklerini beğenirsiniz hocam
+  Umarım projeyi ve arka plandaki Model müziklerini beğenirsiniz...
