@@ -1,0 +1,372 @@
+.f-govde{
+    background-color: rgb(0, 0, 0); /* Arka plan rengi siyah*/
+}
+/* Ana menü listesinin genel çerçevesi */
+.f-ul-anamenu {
+    list-style-type: none;       /* Madde işaretlerini (noktaları) kaldırır */
+    background-color: rgb(119, 6, 6); /* Arka plan rengi (Koyu Kırmızı) */
+    width: 100%;                 /* Genişlik tüm ekranı kaplar */
+    margin: 0%;                  /* Dış boşlukları sıfırlar */
+    padding: 0%;                 /* İç boşlukları sıfırlar */
+    display: flex;               /* Menü elemanlarını yan yana dizer */
+    justify-content: center;     /* Elemanları ortalar */
+}
+
+/* Menüdeki linklerin (a etiketlerinin) görünümü */
+.f-ul-anamenu .f-li-anasayfa a {
+    display: inline-block;       /* Blok gibi davranmasını sağlar */
+    color: rgb(255, 255, 255);   /* Yazı rengi beyaz */
+    text-decoration: none;       /* Link altındaki çizgiyi kaldırır */
+    font-family: Arial, Helvetica, sans-serif; /* Yazı tipi */
+    font-weight: bold;           /* Yazı kalınlığı */
+}
+
+/* Mouse ile menü öğesinin üzerine gelindiğinde (Hover) */
+.f-ul-anamenu .f-li-anasayfa:hover {
+    background-color: rgb(80, 1, 1); /* Arka plan daha koyu kırmızı olur */
+    transition: 0.4s;            /* Renk değişiminin yumuşak geçişli olmasını sağlar */
+    padding: 2%;                 /* İç boşluğu artırarak büyüme efekti verir */
+}
+
+/* Menü öğelerinin standart boşlukları */
+.f-ul-anamenu .f-li-anasayfa {
+    padding: 25px;               /* Çevresel iç boşluk */
+}
+
+/* Menüdeki ilk öğenin rengi */
+.f-ul-anamenu .f-li-anasayfa:nth-child(1) {
+    background-color: rgb(55, 11, 11); /* Koyu kırmızı arka plan */
+}
+
+/* İkonların (i etiketleri) ayarları */
+i {
+    color: rgb(255, 255, 255);   /* İkon rengi beyaz */
+    padding-right: 8px;          /* Sağdan iç boşluk */
+    margin-right: 5px;           /* Sağdan dış boşluk */
+}
+/* Anasayfa görselini tam ekrana sığdırma */
+.f-anasayfa-gorsel {
+    width: 100vw; /* Görsel genişliği viewport genişliğine eşit */
+    height: 100vh; /* Görsel yüksekliği viewport yüksekliğine eşit */
+    object-fit: cover; /* Görseli kırpmadan alanı doldur */
+    display: block; /* Blok seviyesinde */
+    margin: 0; /* Tüm boşlukları sıfırla */
+    padding: 0; /* İç boşlukları sıfırla */
+}
+
+/* Tarayıcı varsayılan boşluklarını sıfırlama */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Genişliği yüzdeye göre ayarla */
+    height: auto; /* Yükseklik otomatik olsun */
+    overflow: visible; /* Kaydırmayı etkinleştir */
+}
+/* Hakkımızda sayfası için düzenleme */
+.f-uyeler-ve-hakkimizda {
+    display: flex; /* Yatay hizalama */
+    justify-content: space-between; /* İki bölümü ayır */
+    align-items: flex-start; /* Üstten hizala */
+    gap: 40px; /* İki bölüm arasında boşluk */
+    padding: 20px; /* Çevresel boşluk */
+}
+
+/* Üyeler kısmı */
+.f-uyeler {
+    flex: 1; /* Sol tarafa yerleş */
+    max-width: 40%; /* Genişlik sınırı */
+}
+
+/* Hakkımızda kısmı */
+.f-tarihce-hakkimizda {
+    flex: 2; /* Sağ tarafa yerleş */
+    max-width: 60%; /* Genişlik sınırı */
+    font-family: 'Verdana', sans-serif; /* Yazı tipi */
+    font-size: 1rem; /* Yazı boyutu */
+    color: rgb(80, 80, 80); /* Yazı rengi */
+    line-height: 1.8; /* Satır yüksekliği */
+    text-align: justify; /* Metni iki yana yasla */
+}
+
+/* Başlıklar için stil */
+.f-tarihce-hakkimizda h2 {
+    font-family: 'Georgia', serif; /* Başlık yazı tipi */
+    font-size: 1.8rem; /* Başlık boyutu */
+    color: rgb(50, 50, 50); /* Başlık rengi */
+    margin-bottom: 15px; /* Alt boşluk */
+}
+
+/* Görseller ve metinler arasında daha fazla boşluk */
+.f-uyeler > * {
+    margin-bottom: 20px; /* Elemanlar arasında boşluk */
+}
+
+/* Sadece anasayfa için kaydırmayı engelle */
+.f-index {
+    overflow: hidden; /* Kaydırmayı engelle */
+    width: 100vw; /* Genişliği viewport genişliğine ayarla */
+    height: 100vh; /* Yüksekliği viewport yüksekliğine ayarla */
+}
+
+/* Yazı renklerini beyaz yapma */
+.f-tarihce-hakkimizda, .f-tarihce-hakkimizda h2, .f-p2-hakkimizda {
+    color: white; /* Yazı rengi beyaz */
+}
+
+/* Görsellerin boyutlarını eşitleme */
+.f-img-hakkimizda {
+    width: 150px; /* Sabit genişlik */
+    height: 150px; /* Sabit yükseklik */
+    object-fit: cover; /* Görseli kırpmadan alanı doldur */
+    border-radius: 50%; /* Yuvarlak görseller */
+}
+
+/* Üyeler kısmındaki yazıları beyaz yapma */
+.f-h2-hakkimizda, .f-p-hakkimizda {
+    color: white; /* Yazı rengi beyaz */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Hafif gölge ile görünürlüğü artır */
+}
+/* Giriş ve Kayıt Formu */
+.f-giris-form {
+    background-color: rgb(255, 255, 255); /* Form arka planı beyaz */
+    padding: 30px; /* İç boşluk */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    width: 500px; /* Form genişliği */
+    height: 450px; /* Form yüksekliği */
+    margin: 50px auto; /* Ortalamak için üstten boşluk ve otomatik yan boşluk */
+}
+.f-giris-form h3 {
+    font-family: 'Georgia', serif; /* Başlık yazı tipi */
+    font-size: 1.8rem; /* Başlık boyutu */
+    color: rgb(50, 50, 50); /* Başlık rengi */
+    margin-bottom: 20px; /* Alt boşluk */
+    text-align: center; /* Başlığı ortala */
+}
+.f-p-giris {
+    font-family: 'Verdana', sans-serif; /* Yazı tipi */
+    font-size: 1rem; /* Yazı boyutu */
+    color: rgb(80, 80, 80); /* Yazı rengi */
+    line-height: 1.8; /* Satır yüksekliği */
+    text-align: center; /* Metni ortala */
+}
+.f-giris-form input{
+    width: 100%; /* Genişliği formun tamamına yay */
+    padding: 10px; /* İç boşluk */
+    margin-bottom: 15px; /* Alt boşluk */
+    border: 1px solid rgb(200, 200, 200); /* İnce gri kenarlık */
+    border-radius: 5px; /* Köşeleri hafif yuvarlat */
+}
+.f-a-giris-kayit {
+    text-decoration: none; /* Link altındaki çizgiyi kaldırır */
+    color: rgb(159, 32, 32); /* Link rengi koyu kırmızı */
+     font-family: 'Verdana', sans-serif; /* Yazı tipi */
+     font-size: 1rem; /* Yazı boyutu */
+}
+.f-a-giris-kayit:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.f-uyelik-form {
+    background-color: rgb(255, 255, 255); /* Form arka planı beyaz */
+    padding: 30px; /* İç boşluk */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    width: 500px; /* Form genişliği */
+    height: 500px; /* Form yüksekliği */
+    margin: 50px auto; /* Ortalamak için üstten boşluk ve otomatik yan boşluk */
+}
+.f-uyelik-form h3 {
+    font-family: 'Georgia', serif; /* Başlık yazı tipi */
+    font-size: 1.8rem; /* Başlık boyutu */
+    color: rgb(50, 50, 50); /* Başlık rengi */
+    margin-bottom: 20px; /* Alt boşluk */
+    text-align: center; /* Başlığı ortala */
+}
+.f-p-kayit {
+    font-family: 'Verdana', sans-serif; /* Yazı tipi */
+    font-size: 1rem; /* Yazı boyutu */
+    color: rgb(80, 80, 80); /* Yazı rengi */
+    line-height: 1.8; /* Satır yüksekliği */
+    text-align: center; /* Metni ortala */
+}
+.f-uyelik-form input{
+    width: 100%; /* Genişliği formun tamamına yay */
+    padding: 10px; /* İç boşluk */
+    margin-bottom: 15px; /* Alt boşluk */
+    border: 1px solid rgb(200, 200, 200); /* İnce gri kenarlık */
+    border-radius: 5px; /* Köşeleri hafif yuvarlat */
+}
+.f-a-giris {
+    text-decoration: none; /* Link altındaki çizgiyi kaldırır */
+    color: rgb(159, 32, 32); /* Link rengi koyu kırmızı */
+     font-family: 'Verdana', sans-serif; /* Yazı tipi */
+     font-size: 1rem; /* Yazı boyutu */
+}
+.f-a-giris:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Konser takvimi ve müzik kısmını yatay hizalama */
+.f-konserler-ve-muzik {
+    display: flex; /* Yatay hizalama */
+    justify-content: space-between; /* İki bölümü ayır */
+    align-items: flex-start; /* Üstten hizala */
+    gap: 40px; /* İki bölüm arasında boşluk */
+    padding: 20px; /* Çevresel boşluk */
+}
+
+/* Müzik kısmı */
+.f-konserler-muzik {
+    flex: 1; /* Sol tarafa yerleş */
+    max-width: 40%; /* Genişlik sınırı */
+    border: 2px solid white; /* Beyaz kenarlık */
+    padding: 15px; /* İç boşluk */
+    border-radius: 10px; /* Yuvarlak köşeler */
+    background-color: rgba(255, 255, 255, 0.1); /* Hafif şeffaf beyaz arka plan */
+}
+
+/* Albüm kapakları ve ses dosyaları */
+.f-album-kapagi {
+    width: 100px; /* Küçük boyut */
+    height: 100px; /* Küçük boyut */
+    object-fit: cover; /* Görseli kırpmadan alanı doldur */
+    margin-right: 10px; /* Ses dosyasıyla araya boşluk */
+}
+.f-konserler-muzik audio {
+    vertical-align: middle; /* Ses dosyasını ortala */
+}
+
+/* Konser takvimi */
+.f-konserler-takvimi {
+    flex: 2; /* Sağ tarafa yerleş */
+    max-width: 60%; /* Genişlik sınırı */
+    border: 2px solid white; /* Beyaz kenarlık */
+    padding: 15px; /* İç boşluk */
+    border-radius: 10px; /* Yuvarlak köşeler */
+    background-color: rgba(255, 255, 255, 0.1); /* Hafif şeffaf beyaz arka plan */
+}
+
+/* Konser listesi */
+.f-ul-konserler {
+    list-style-type: none; /* Madde işaretlerini kaldır */
+    padding: 0; /* İç boşlukları sıfırla */
+}
+.f-li-konserler {
+    display: flex; /* Yatay hizalama */
+    justify-content: space-between; /* Konser bilgisi ve bilet al butonunu ayır */
+    align-items: center; /* Dikey hizalama */
+    margin-bottom: 15px; /* Alt boşluk */
+}
+.f-li-konserler input {
+    padding: 10px 15px; /* Larger button size */
+    font-size: 1rem; /* Increase font size */
+    background-color: rgb(119, 6, 6); /* Keep red background */
+    color: white; /* Ensure text is white */
+}
+.f-li-konserler input:hover {
+    background-color: rgb(80, 1, 1); /* Darker red */
+}
+.f-li-konserler span {
+    font-size: 1.2rem; /* Larger text */
+    color: white; /* White text */
+}
+.f-h2-konserler{
+    font-family: 'Georgia', serif; /* Başlık yazı tipi */
+    font-size: 1.8rem; /* Başlık boyutu */
+    color: rgb(255, 255, 255); /* Başlık rengi */
+    margin-bottom: 20px; /* Alt boşluk */
+    text-align: center; /* Başlığı ortala */
+}
+/* Admin sayfası stilleri */
+.f-admin {
+    color: rgb(255, 255, 255); /* Yazı rengi beyaz */
+    font-family: 'Verdana', sans-serif; /* Yazı tipi */
+    font-size: 1rem; /* Yazı boyutu */
+    background-color: rgb(153, 23, 23); /* Arka plan rengi siyah */
+    padding: 30px; /* İç boşluk */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Hafif gölge */
+    width: 400px; /* Form genişliği */
+    height: auto; /* Form yüksekliği içeriğe göre ayarlanır */
+    margin: 50px auto; /* Ortalamak için üstten boşluk ve otomatik yan boşluk */
+}
+.f-h3-admin {
+    font-family: 'Georgia', serif; /* Başlık yazı tipi */
+    font-size: 1.8rem; /* Başlık boyutu */
+    color: rgb(255, 255, 255); /* Başlık rengi */   
+    margin-bottom: 20px; /* Alt boşluk */
+    text-align: center; /* Başlığı ortala */
+}
+.f-input-admin {
+    width: 100%; /* Genişliği formun tamamına yay */
+    padding: 10px; /* İç boşluk */
+    margin-bottom: 15px; /* Alt boşluk */
+    border: 1px solid rgb(200, 200, 200); /* İnce gri kenarlık */
+    border-radius: 5px; /* Köşeleri hafif yuvarlat */
+    text-align: center; /* Yazıyı ortala */
+}
+.f-input-admin-ekle {
+    width: 100%; /* Genişliği formun tamamına yay */
+    padding: 10px; /* İç boşluk */
+    margin-bottom: 15px; /* Alt boşluk */
+    border: 1px solid rgb(200, 200, 200); /* İnce gri kenarlık */
+    border-radius: 5px; /* Köşeleri hafif yuvarlat */
+    background-color: rgb(0, 0, 0); /* Siyah arka plan */
+    color: white; /* Beyaz yazı rengi */
+}
+.f-tablo-admin {
+    width: 80%; /* Tablo genişliği */
+    margin: auto; /* Ortalamak için otomatik yan boşluk */
+    text-align: center; /* Metni ortala */
+    background-color: rgb(153, 23, 23); /* Koyu kırmızı arka plan */
+    color: black; /* Siyah yazı rengi */
+}
+.f-h3-admin {
+    font-family: 'Georgia', serif; /* Başlık yazı tipi */
+    font-size: 1.8rem; /* Başlık boyutu */
+    color: rgb(255, 255, 255); /* Başlık rengi */
+    text-align: center; /* Başlığı ortala */
+}
+.f-tbaslik-admin {
+    background-color: rgba(255, 255, 255); /* Beyaz arka plan */
+    color: black; /* Siyah yazı rengi */
+    font-family: 'Verdana', sans-serif; /* Yazı tipi */
+    font-size: 1.2rem; /* Yazı boyutu */
+}
+.f-tsatiri-admin {
+    background-color: rgba(255, 255, 255); /* Beyaz arka plan */
+}
+.f-tveri-admin {
+    color: black; /* Siyah yazı rengi */
+    font-family: 'Verdana', sans-serif; /* Yazı tipi */
+    font-size: 1rem; /* Yazı boyutu */
+}
+/* İletişim sayfası stilleri */
+.f-resim-ulas {
+    width: 50px; /* Genişlik 50px olarak ayarlanır */
+    height: 50px; /* Yükseklik 50px olarak ayarlanır */
+    object-fit: cover; /* Görseli kırpmadan alanı doldur */
+    margin-right: 10px; /* Görsel ile metin arasında boşluk */
+}
+
+/* Bize ulaşın kutusu */
+.f-bize-ulasin {
+    background-color: rgba(255, 255, 255, 0.866); /* Beyaz arka plan */
+    width: 500px; /* Genişlik */
+    padding: 20px; /* İç boşluk */
+    border-radius: 15px; /* Köşeleri yuvarlat */
+    color: rgb(0, 0, 0); /* Siyah yazı rengi */
+    font-family: Arial, Helvetica, sans-serif; /* Yazı tipi */
+    text-align: center; /* Metni ortala */
+    margin: auto; /* Ortalamak için otomatik yan boşluk */
+    margin-top: 30px; /* Üst boşluk */
+    margin-bottom: 50px; /* Alt boşluk */
+}
+.f-p-ulas{
+    font-size: 1.2rem; /* Yazı boyutu */
+    color: rgb(0, 0, 0); /* Siyah yazı rengi */
+    font-family: 'Verdana', sans-serif; /* Yazı tipi */
+    line-height: 1.8; /* Satır yüksekliği */
+}

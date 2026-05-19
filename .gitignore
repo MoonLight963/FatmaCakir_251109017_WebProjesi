@@ -1,0 +1,5 @@
+muzikler/
+resimler/
+node_modules/
+*.log
+*.env
