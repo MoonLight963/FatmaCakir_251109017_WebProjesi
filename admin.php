@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sonuc = $konser_ekle->execute([$gelen_tarih, $gelen_detay]);
 
         if ($sonuc) {
-            echo "<script>alert('Harika! Yeni konser başarıyla eklendi kanka.');</script>";
+            echo "<script>alert('Harika! Yeni konser başarıyla eklendi.');</script>";
         } else {
             echo "<script>alert('Konser eklenirken bir sorun çıktı.');</script>";
         }

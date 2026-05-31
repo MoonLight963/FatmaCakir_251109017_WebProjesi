@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['silinecek_id'])) {
 
     if ($sonuc) {
         // Silme başarılıysa admin paneline geri dön ve mesaj ver
-        echo "<script>alert('Konser veritabanından acımasızca silindi kanka!'); window.location.href='admin.php';</script>";
+        echo "<script>alert('Konser veritabanından acımasızca silindi!'); window.location.href='admin.php';</script>";
         exit;
     } else {
         echo "<script>alert('Eyvah! Silme işlemi sırasında bir sorun oluştu.'); window.location.href='admin.php';</script>";
